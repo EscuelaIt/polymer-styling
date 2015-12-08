@@ -1,0 +1,9 @@
+{
+  "name": "polymer-styles-escuelait",
+  "version": "1.0.0",
+  "description": "Material utilizado para la clase sobre estilos en Polymer para EscuelaIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

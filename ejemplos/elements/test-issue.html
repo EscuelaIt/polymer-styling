@@ -1,0 +1,17 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="my-element">
+  <style>
+    :host {
+      --main-color: {red};
+    }
+    span {
+      color: var(--main-color);
+    }
+  </style>
+  <template>
+    <span>I'm <b>my-element</b>. This is my Shadow DOM.</span>
+  </template>
+  <script>
+    Polymer({ is: 'my-element'});
+  </script>   
+</dom-module>

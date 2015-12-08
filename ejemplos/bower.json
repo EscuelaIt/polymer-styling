@@ -1,0 +1,8 @@
+{
+  "name": "polymer-styles-escuelaIT",
+  "private": true,
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}

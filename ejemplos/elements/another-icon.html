@@ -1,7 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../styles/shared-styles-for-icons.html">
 
 <dom-module id="another-icon">
 
@@ -14,13 +13,18 @@
         display: inline-block;
         font-family: sans-serif;
         font-weight:bold;
-        --iron-icon-width: 50px;
-        --iron-icon-height: 50px;
+        --icon-toggle-color: green;
+        --icon-toggle-outline-color:orange;
+        --iron-icon-width: 250px;
+        --iron-icon-height: 250px;
       }
       iron-icon {
-        fill:green;
-        stroke: var(--icon-toggle-outline-color, currentcolor);
+        fill:var(--icon-toggle-color);
+        stroke: var(--icon-toggle-outline-color);
       }
+      
+      p { color:blue }
+      
     </style>
     
     <p>Y esto es un texto de prueba para otro icono</p>

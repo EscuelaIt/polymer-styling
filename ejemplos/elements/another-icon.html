@@ -16,10 +16,16 @@
         --icon-toggle-outline-color:orange;
         --iron-icon-width: 250px;
         --iron-icon-height: 250px;
+        /* mixin example */
+        /* --my-circle: {
+          border-radius: 40px;
+          border: 10px solid gray;
+        }*/ 
       }
       iron-icon {
         fill:var(--icon-toggle-color);
         stroke: var(--icon-toggle-outline-color);
+        /*@apply(--my-circle);*/
       }
       
       p { color:blue }

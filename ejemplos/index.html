@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- Based on this url http://stackoverflow.com/questions/32298500/polymer-import-theme-file-with-host-in-styles-has-no-affect/32302856#32302856 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,32 +13,21 @@
       window.Polymer.dom = 'shadow';
     </script>
     
+    
+    
     <!-- step 1: import the module -->
     <link rel="import" href="shared-styles.html" />
     
     <!-- step 2 (document level): include the style module by name -->
     <style is="custom-style" include="shared-styles" />
+    
+    <link rel="import" href="my-element.html" />
       
   </head>
   <body>
-    <my-element></my-element>
-    <div class="red">Am I red (inside document)?</div>
     
-    <dom-module id="my-element">
-      <!-- step 2 (element level): include the style module by name -->
-      <style include="shared-styles"></style>
-      
-        <template>
-            <div class="red">
-              Am I red (inside element)?
-            </div>
-            <br>
-        </template>
-        <script>
-    Polymer({
-        is: 'my-element'
-    });
-        </script>
-    </dom-module>
-</body>
+    <div class="alert">Am I red (inside document)?</div>
+    
+
+  </body>
 </html>

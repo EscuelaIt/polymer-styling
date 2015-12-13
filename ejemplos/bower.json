@@ -1,8 +1,18 @@
 {
-  "name": "polymer-styles-escuelaIT",
-  "private": true,
+  "name": "ui-message",
+  "version": "0.0.0",
+  "authors": [
+    "Rob Dodson <robdodson@google.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
-    "polymer": "Polymer/polymer#^1.2.0"
+    "polymer": "polymer/polymer#~1.0.0"
   }
 }

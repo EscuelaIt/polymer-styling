@@ -92,6 +92,40 @@
               <p class="fragment">... hablemos del <em>castillo</em>...</p>
               <p class="fragment"><a href="https://www.youtube.com/watch?v=IbOaJwqLgog&list=PLNYkxOF6rcICdISJclfQhj2S8QZGjXV8J&index=10">Polymer's Styling System (The Polymer Summit 2015)</a></p>
           </section>
+          
+          
+          <section>
+            	<h3>::shadow</h3>
+              <p>Permite dar estilos a nodos interiores dentro de un shadow dom</p>
+              <pre><code class="html">&lt;paper-slider min="" max="" &gt;&lt;paper-slider&gt;</code></pre>
+              <pre><code class="css">paper-slider::shadow #sliderKnoInner { background-color:$f4b400; }</code></pre>
+              
+          </section>
+          <section>
+            	<h3>/deep/</h3>
+              <p>Profundiza dentro de un nodo y busca elementos.</p>
+              <pre><code class="html">&lt;div&gt;
+  &lt;span&gt;Outer&lt;/span&gt;
+  #shadow-root
+  &lt;my-component&gt;
+    &lt;span&gt;Inner&lt;/span&gt;
+  &lt;/my-component&gt;
+&lt;/div&gt;</code></pre>
+
+
+              <pre><code class="css">html /deep/ span { background-color:$f4b400; }</code></pre>
+              <pre><code class="css">::shadow span { background-color:$f4b400; }</code></pre>
+              
+          </section>
+          <section>
+            <h3>¿Por qué no se debe usar ::shadow y /deep/?</h3>
+            <ul>
+              <li class="fragment">Rompe la encapsulación.</li>
+              <li class="fragment">Problemas de rendimiento.</li>
+              <li class="fragment">Solución poco elegante.</li>
+            </ul>
+            
+          </section>
           <section>
             	<h3>Shady DOM</h3>
               <p><a href="https://www.polymer-project.org/1.0/articles/shadydom.html">Why do we need a new kind of DOM?</a></p>

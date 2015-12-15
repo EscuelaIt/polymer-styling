@@ -13,6 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#~1.0.0"
+    "polymer": "polymer/polymer#~1.2.0"
   }
 }

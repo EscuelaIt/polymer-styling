@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  
     <script>
       window.Polymer = window.Polymer || {};
       window.Polymer.dom = 'shadow';
     </script>
     
+    <link rel="import" href="my-element.html" />
     
-    
-    <!-- step 1: import the module -->
     <link rel="import" href="shared-styles.html" />
     
-    <!-- step 2 (document level): include the style module by name -->
+    <style>
+      
+      .alert { color:red }
+      
+    </style>
+    
     <style is="custom-style" include="shared-styles"></style>
     
-    <link rel="import" href="my-element.html" />
+    
       
   </head>
   <body>
     
-    <div class="alert">Am I red (inside document)?</div>
+    <div class="alert">Am I with another color (outside document)?</div>
+    
+    <hr />
+    
+    <my-element></my-element>
+    
+   
     
 
   </body>

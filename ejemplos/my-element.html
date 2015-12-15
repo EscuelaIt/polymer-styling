@@ -1,13 +1,13 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
+<!--link rel="import" href="shared-styles.html"-->
+
 <dom-module id="my-element">
-  <!-- step 2 (element level): include the style module by name -->
-  <style include="shared-styles"></style>
-  
     <template>
+        <style include="shared-styles"></style>
+     
         <div class="alert">
-          Am I red (inside element)?
+          Am I with another color (inside component)?
         </div>
-        <br>
     </template>
     <script>
       Polymer({

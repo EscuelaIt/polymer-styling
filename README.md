@@ -24,6 +24,6 @@ Para arrancar el ejemplo de cada rama: `gulp webserver`
 * step-2: Ejemplo que muestra dos iconos usando _custom css properties_ para dar estilos a los iconos.
 * step-3: Ejemplo que muestra dos iconos compartiendo estilos por medio de _shared styles_.
 * step-4: Ejemplo que muestra dos iconos que tienen estilos base incluidos mediante _custom styles_.
-* polycast-17: ejemplo del [Polycast](https://www.youtube.com/playlist?list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN) [nº 17][https://www.youtube.com/watch?v=omASiF85JzI&index=23&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN] de Google.
+* polycast-17: ejemplo del [Polycast](https://www.youtube.com/playlist?list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN) [nº 17](https://www.youtube.com/watch?v=omASiF85JzI&index=23&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN) de Google.
 * shared-styles: Ejemplo donde podemos ver y probar qué problemas puede haber a la hora de utiliar o no el Shadow DOM.
 * issue-estilos: Ejemplo para demostrar la [issue de Polymer](https://github.com/Polymer/polymer/issues/2709) a la hora de tratar _custom css properties_. 
